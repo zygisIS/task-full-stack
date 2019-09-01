@@ -2051,7 +2051,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.patch("/api/users", formedForm).then(function (response) {
         return _this2.editUser(response.data.data, _this2.index);
       })["catch"](function (error) {
-        return console.log(error);
+        return _this2.errors.record(error.response.data.errors);
       });
     },
     editUser: function editUser(user, index) {
@@ -50859,8 +50859,8 @@ function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\laravel projects\task-full-stack\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\laravel projects\task-full-stack\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\laravel projects\hostinger-task-full-stack\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\laravel projects\hostinger-task-full-stack\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

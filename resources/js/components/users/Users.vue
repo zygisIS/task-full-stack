@@ -139,7 +139,7 @@ export default {
       axios
         .patch("/api/users", formedForm)
         .then(response => this.editUser(response.data.data, this.index))
-        .catch(error => console.log(error));
+        .catch(error => this.errors.record(error.response.data.errors));
     },
     editUser(user, index) {
       this.usersList.splice(index, 1);
